@@ -14,9 +14,14 @@ class App extends StatelessWidget {
 
   ThemeData _appThemeData() {
     return ThemeData(
-        appBarTheme: AppBarTheme(titleTextStyle: AppBarTextStyle),
-        textTheme: TextTheme(
-            headline6: Headline6TextStyle, bodyText1: Body1TextStyle));
+      appBarTheme: AppBarTheme(titleTextStyle: AppBarTextStyle),
+      textTheme: TextTheme(
+        headline5: TitleTextStyle,
+        headline6: SubtitleTextStyle,
+        caption: CaptionTextStyle,
+        bodyText1: BodyTextStyle,
+      ),
+    );
   }
 
   RouteFactory _appRoutes() {
